@@ -65,7 +65,7 @@ const Navbar = () => {
 					<ul className="font-semibold text-4xl space-y-8 text-center mt-24">
 						<li className="cursor-pointer hover:text-slate-400">
 							<Link to="skills" onClick={closeNav} smooth={50} duration={500}>
-								About
+								Skills
 							</Link>
 						</li>
 						<li className="cursor-pointer hover:text-slate-400">
