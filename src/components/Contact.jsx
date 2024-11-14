@@ -4,16 +4,16 @@ import Reveal from "../components/Reveal";
 
 const Contact = () => {
 	return (
-		<div className="px-6 max-w-[1200px] mx-auto md:my-12 " id="contact">
+		<div className="px-6 max-w-[1000px] mx-auto md:my-12 " id="contact">
 			<Reveal>
-				<div classsName="grid grid-cols-2 sm:grid-cols-1place-items-center"></div>
+				<div classsName="grid grid-cols-2 place-items-center"></div>
 				<div className="flex flex-col md:flex-row justify-center px-4 y-4">
-					<div className="mt-3 ">
+					<div className="mt-3 max-w-lg">
 						<h3 className="text-4xl font-semibold mb-4 text-gray-200 ">
 							About
 							<span className="text-yellow-300"> Me</span>
 						</h3>
-						<p className="text-gray-400 justify leading-7 w-11/12 mx-auto">
+						<p className="text-gray-400 justify leading-7 w-11/12 mx-auto font-extralight text-lg">
 							Enthusiastic and creative software developer with strong
 							foundation in web development principles and a passion for
 							user-centered design. Eager to learn and contribute to a
@@ -42,9 +42,9 @@ const Contact = () => {
 					</div>
 
 					<form
-						actions="https://getform.io/f/bgddlvxa"
-						method="POST"
-						className=" w-full px-4 py-6 md:p-12 "
+						action="https://getform.io/f/bgddlvxa"
+						method="post"
+						className="w-full px-4 py-6 md:p-6 "
 						id="contact"
 					>
 						<p className="text-gray-100 font-bold text-xl mb-2">
@@ -76,7 +76,7 @@ const Contact = () => {
 						/>
 						<button
 							type="submit"
-							className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-yellow-600 "
+							className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-yellow-500 "
 						>
 							Send Message
 						</button>
