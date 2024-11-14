@@ -8,7 +8,7 @@ const Footer = () => {
 					Hizkiyas Bogale
 				</h3>
 				<div className="flex gap-6 text-gray-400 text-4xl">
-					<motion.a href="#">
+					<motion.a href="https://github.com/hizki-rp">
 						<FaGithubSquare />
 					</motion.a>
 					<a href="#">
