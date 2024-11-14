@@ -37,7 +37,7 @@ const Navbar = () => {
 				<ul className="hidden md:flex gap-12 x-10 cursor-pointer">
 					<li>
 						<Link to="skills" smooth={50} duration={500}>
-							About
+							Skills
 						</Link>
 					</li>
 					<li>
