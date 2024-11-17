@@ -18,7 +18,7 @@ import {
 } from "react-icons/di";
 const Hero = () => {
 	return (
-		<div className="z-0 mt-24 pt-4 max-w-[1200px] mx-auto relative">
+		<div className="z-0 mt-24 pt-4 max-w-[1100px] mx-auto relative">
 			<div className="grid md:grid-cols-2 place-items-center gap-8 max-md:px-12 ">
 				<motion.div
 					initial={{ opacity: 0, y: -50 }}
