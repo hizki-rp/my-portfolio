@@ -12,7 +12,7 @@ const experiences = [
 	{
 		company: "Mekelle University",
 		period: "2019 - 2023",
-		Description: "",
+		Description: "Software Engineering",
 	},
 ];
 

@@ -47,11 +47,13 @@ const Skills = () => {
 			id="skills"
 		>
 			<Reveal>
-				
 				<h2 className="text-3xl font-bold mb-4 text-center ">Skills</h2>
 				<p className="text-center mb-8">
 					I worked on frontend projects. check them <t />
-					<a href="#" className="underline hover:text-gray-600">
+					<a
+						href="#portfolio"
+						className="underline hover:text-gray-600"
+					>
 						here
 					</a>
 				</p>
