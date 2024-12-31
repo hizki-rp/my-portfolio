@@ -5,6 +5,8 @@ import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
 import project6 from "../assets/project6.png";
+import project6 from "../assets/project7.png";
+
 import Reveal from "../components/Reveal";
 
 const Portfolio = () => {
@@ -17,6 +19,16 @@ const Portfolio = () => {
 			links: {
 				site: "https://my-react-app-swart-ten.vercel.app/",
 				github: "https://github.com/hizki-rp/my-react-app.git",
+			},
+		},
+			{
+			img: project7,
+			title: "AYATA TRAVEL",
+			description:
+				" is a visually engaging and fully responsive web application built with React and styled using Tailwind CSS. Designed for a client, the project showcases various sections that highlight different aspects of the Company.",
+			links: {
+				site: "https://ayata-travel.vercel.app/",
+				github: "https://hizki-rp.github.io/ayata-travel/",
 			},
 		},
 		{
