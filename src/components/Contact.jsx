@@ -30,11 +30,11 @@ const Contact = () => {
 									<span className="text-xs md:text-base">Projects</span>
 								</p>
 								<h3 className="md:text-4xl text-2xl font-semibold text-white">
-									6<span>+</span>
+									1<span>+</span>
 								</h3>
 								<p>
 									<span className="text-xs md:text-base ">
-										Months of Experience
+										Years of Experience
 									</span>
 								</p>
 							</div>
