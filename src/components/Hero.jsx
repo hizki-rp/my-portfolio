@@ -92,7 +92,8 @@ const Hero = () => {
 							whileInView={{ opacity: 1, scale: 1 }}
 							viewport={{ once: true }}
 							transition={{ duration: 1 }}
-							className="relative w-full max-w-xs mx-auto lg:max-w-sm" src={profbest} alt="Hizkiyas Bogale" />
+							className="relative w-full max-w-[14rem] mx-auto lg:max-w-[18rem]" src={profbest} alt="Hizkiyas Bogale"
+							style={{ animation: 'float-animation 4s ease-in-out infinite', willChange: 'transform' }} />
 					</div>
 				</div>
 			</div>

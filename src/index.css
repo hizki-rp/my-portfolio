@@ -15,6 +15,18 @@
 	}
 }
 
+@keyframes float-animation {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
 body {
 	--color-cyan-500: #06b6d4;
 	--color-purple-500: #8b5cf6;
