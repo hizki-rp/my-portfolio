@@ -6,6 +6,7 @@ import {
 	DiNodejsSmall,
 	DiMongodb,
 	DiGithubBadge,
+    DiDjango,
 } from "react-icons/di";
 import Reveal from "../components/Reveal";
 import { RiTailwindCssFill } from "react-icons/ri";
