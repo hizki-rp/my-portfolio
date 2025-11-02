@@ -3,9 +3,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 body {
-  font-family: "Space Grotesk", sans-serif;
-  background-color: #190b1f;
+	--color-cyan-500: #06b6d4;
+	--color-purple-500: #8b5cf6;
+	font-family: "Space Grotesk", sans-serif;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.gradient-text {
+	background: linear-gradient(to right, var(--color-cyan-500), var(--color-purple-500));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 h2 {

@@ -4,8 +4,7 @@ import {
 	DiJavascript1,
 	DiReact,
 	DiNodejsSmall,
-	DiMongodb,
-	DiGithubBadge,
+	DiGithub,
     DiDjango,
 } from "react-icons/di";
 import Reveal from "../components/Reveal";
@@ -31,14 +30,14 @@ const Skills = () => {
 		},
 		{
 			category: "Fullstack",
+			// Consider adding icons for Express, PostgreSQL, Docker, etc.
 			technologies: [
-				{ name: "Node", icon: <DiHtml5 className="text-green-500" /> },
+				{ name: "Node", icon: <DiNodejsSmall className="text-green-500" /> },
 				{ name: "Django", icon: <DiDjango className="text-green-600" /> },
-				{
-					name: "React",
-					icon: <RiTailwindCssFill className="text-blue-600" />,
-				},
-				{ name: "Github", icon: <DiJavascript1 className="text-gray-600" /> },
+				{ name: "Express.js", icon: <DiNodejsSmall className="text-gray-400" /> }, // Placeholder icon
+				{ name: "PostgreSQL", icon: <DiReact className="text-blue-600" /> }, // Placeholder icon
+				{ name: "REST APIs", icon: <DiReact className="text-blue-600" /> }, // Placeholder icon
+				{ name: "Github", icon: <DiGithub className="text-gray-600" /> },
 			],
 		},
 	];

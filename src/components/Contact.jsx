@@ -14,11 +14,12 @@ const Contact = () => {
 							<span className="text-yellow-300"> Me</span>
 						</h3>
 						<p className="text-gray-400 justify leading-7 w-11/12 mx-auto font-extralight text-lg">
-							Enthusiastic and creative software developer with strong
-							foundation in web development principles and a passion for
-							user-centered design. Eager to learn and contribute to a
-							fast-pased development environment. Proficient in HTML, CSS,
-							JavaScript and React.
+							I am a results-oriented software developer specializing in
+							full-stack web development. With expertise in React for dynamic
+							front-ends and Node.js/Django for robust back-ends, I excel at
+							building and deploying complete applications. I am passionate
+							about writing clean, efficient code and creating seamless user
+							experiences.
 						</p>
 
 						<div className="flex mt-10 items-center gap-2">
@@ -51,6 +52,7 @@ const Contact = () => {
 							Lets connect!
 						</p>
 
+						<label htmlFor="name" className="sr-only">Your Name</label>
 						<input
 							type="text"
 							id="name"
@@ -58,6 +60,7 @@ const Contact = () => {
 							name="name"
 							className="mb-2 w-full rounded-md border border-Yellow-600 py-2 pl-2 pr-4 my-4"
 						/>
+						<label htmlFor="email" className="sr-only">Your Email</label>
 						<input
 							type="email"
 							id="email"
@@ -66,6 +69,7 @@ const Contact = () => {
 							className="mb-2 w-full rounded-md border border-Yellow-600 py-2 pl-2 pr-4 my-4"
 						/>
 
+						<label htmlFor="message" className="sr-only">Your Message</label>
 						<textarea
 							id="message"
 							placeholder="Your Message ..."
