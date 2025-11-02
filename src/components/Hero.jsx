@@ -41,7 +41,7 @@ const Hero = () => {
 							transition={{ duration: 1, delay: 0.5 }}
 							className="text-4xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-7xl"
 						>
-							Hey! I'm <span className="gradient-text">Hizkiyas Bogale</span>
+							Hey! I'm <span className="gradient-text">Hizkiyas</span>
 						</motion.h1>
 						<motion.p
 							initial={{ opacity: 0 }}

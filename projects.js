@@ -63,15 +63,4 @@ export const projects = [
 			github: "#",
 		},
 	},
-	{
-		id: "canva-clone",
-		img: project5,
-		title: "Canva Layout Clone",
-		description:
-			"This project is a Canva Layout Clone showcasing the design and functionality of Canva’s editing page. Built entirely with HTML and CSS, the clone replicates the core layout and aesthetic of Canva’s user interface, emphasizing precision and attention to detail.",
-		links: {
-			site: "https://hizki-rp.github.io/postDesign/",
-			github: "https://github.com/hizki-rp/postDesign.git",
-		},
-	},
 ];
