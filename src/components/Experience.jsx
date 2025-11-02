@@ -3,6 +3,12 @@ import { MdDescription } from "react-icons/md";
 import Reveal from "../components/Reveal";
 
 const experiences = [
+    {
+		company: "Marveles Creative Technologies",
+		period: "Jan-2025 - present",
+		Description:
+			"Full stack web developer",
+	},		
 	{
 		company: "GAO Tek Inc",
 		period: "Jan-2023 - June-2023",

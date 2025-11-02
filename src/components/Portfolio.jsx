@@ -5,14 +5,25 @@ import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
 import project6 from "../assets/project6.png";
-import project7 from "../assets/project7.jpg";
+import project7 from "../assets/project7.png";
+import project8 from "../assets/project8.jpg";
 
 import Reveal from "../components/Reveal";
 
 const Portfolio = () => {
 	const projects = [
-		{
+	   {
 			img: project1,
+			title: "Study Abroad support website",
+			description:
+				"Study abroad student support system, with real-time university data, users, user dashboard and admin dashboard. Built with Djano and react!",
+			links: {
+				site: "https://addistemari.com/",
+				github: "#",
+			},
+		},
+		{
+			img: project2,
 			title: "MovieSpot",
 			description:
 				"This is a responsive Movie Showcase Website built using React and styled with CSS. The website fetches real-time movie data from the OMDb API, allowing users to search for movies, view detailed information about each title, and explore trending films.",
@@ -22,7 +33,7 @@ const Portfolio = () => {
 			},
 		},
 			{
-			img: project7,
+			img: project8,
 			title: "AYATA TRAVEL",
 			description:
 				" is a visually engaging and fully responsive web application built with React and styled using Tailwind CSS. Designed for a client, the project showcases various sections that highlight different aspects of the Company.",
@@ -32,7 +43,7 @@ const Portfolio = () => {
 			},
 		},
 		{
-			img: project2,
+			img: project3,
 			title: "Nike SPA",
 			description:
 				" is a visually engaging and fully responsive web application built with React and styled using Tailwind CSS. Designed to emulate a professional e-commerce platform, the project showcases various sections that highlight different aspects of the Nike brand, including product categories, promotional banners, and featured items.",
@@ -42,7 +53,7 @@ const Portfolio = () => {
 			},
 		},
 		{
-			img: project3,
+			img: project4,
 			title: "Multi-Page Corporate Website",
 			description:
 				"This is a professional, multi-page corporate website designed and developed using WordPress and Elementor for a client during my internship at the company. The website features over 15 pages, offering a comprehensive platform tailored to the client’s needs, including sections for services, company information, contact forms, and more.",
@@ -52,7 +63,7 @@ const Portfolio = () => {
 			},
 		},
 		{
-			img: project4,
+			img: project5,
 			title: "Advanced CSS3 Contact Form",
 			description:
 				"This project involves creating an Advanced CSS3 Contact Form as part of a WordPress-based website. The form extends the functionality of Contact Form 7 (CF7), incorporating custom CSS3 styling for a modern and user-friendly design. It is fully compatible with various WordPress themes and major browsers, ensuring a seamless experience for all users.",
@@ -72,7 +83,7 @@ const Portfolio = () => {
 			},
 		},
 		{
-			img: project6,
+			img: project7,
 			title: "TechySonic - E-commerce SPA",
 			description:
 				"TechySonic is a simple, single-page e-commerce application (SPA) built with React and styled using CSS. The project focuses on showcasing a catalog of various computer types, offering a clean and intuitive user interface for exploring products.",

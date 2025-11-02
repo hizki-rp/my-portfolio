@@ -32,7 +32,7 @@ const Skills = () => {
 			category: "Fullstack",
 			technologies: [
 				{ name: "Node", icon: <DiHtml5 className="text-green-500" /> },
-				{ name: "MongoDB", icon: <DiCss3 className="text-green-600" /> },
+				{ name: "Django", icon: <DiDjango className="text-green-600" /> },
 				{
 					name: "React",
 					icon: <RiTailwindCssFill className="text-blue-600" />,
