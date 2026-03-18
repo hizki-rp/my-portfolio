@@ -22,11 +22,13 @@ const Hero = () => {
 						>
 							<TypeAnimation
 								sequence={[
-									"Full Stack Dev",
+									"Full-Stack Engineer",
 									1000,
-									"React Specialist",
+									"Product Architect",
 									1000,
-									"Backend Engineer",
+									"React & Django Specialist",
+									1000,
+									"AI-Driven Systems Builder",
 									1000,
 								]}
 								speed={50}
@@ -50,8 +52,7 @@ const Hero = () => {
 							transition={{ duration: 1, delay: 1 }}
 							className="mt-4 text-lg font-normal text-gray-400 sm:mt-8"
 						>
-							A creative Full-Stack Engineer with a passion for building robust,
-							scalable web applications from concept to deployment.
+							I build intelligent systems where complex backend logic meets intuitive user experience. Specialist in React, Django, and AI-driven automation.
 						</motion.p>
 
 						<div className="flex items-center gap-8 mt-8 sm:mt-12">

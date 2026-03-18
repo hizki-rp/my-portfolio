@@ -6,7 +6,6 @@ const Contact = () => {
 	return (
 		<div className="px-6 max-w-[1000px] mx-auto md:my-12 " id="contact">
 			<Reveal>
-				<div classsName="grid grid-cols-2 place-items-center"></div>
 				<div className="flex flex-col md:flex-row justify-center px-4 y-4">
 					<div className="mt-3 max-w-lg">
 						<h3 className="text-4xl font-semibold mb-4 text-gray-200 ">
@@ -14,24 +13,29 @@ const Contact = () => {
 							<span className="text-yellow-300"> Me</span>
 						</h3>
 						<p className="text-gray-400 justify leading-7 w-11/12 mx-auto font-extralight text-lg">
-							I am a results-oriented software developer specializing in
-							full-stack web development. With expertise in React for dynamic
-							front-ends and Node.js/Django for robust back-ends, I excel at
-							building and deploying complete applications. I am passionate
-							about writing clean, efficient code and creating seamless user
-							experiences.
+							I build intelligent systems where complex backend logic meets
+							intuitive user experience. As a Full-Stack Engineer and Product
+							Architect, I specialize in React, Django, and AI-driven
+							automation — shipping production applications used by real
+							people at scale.
 						</p>
 
 						<div className="flex mt-10 items-center gap-2">
 							<div className="bg-gray-800.40 px-6 py-5 rounded-lg">
 								<h3 className="md:text-4xl text-2xl font-semibold text-white ">
-									4<span>+</span>
+									500<span>+</span>
 								</h3>
 								<p className="mb-4">
-									<span className="text-xs md:text-base">Projects</span>
+									<span className="text-xs md:text-base">Active Users</span>
 								</p>
 								<h3 className="md:text-4xl text-2xl font-semibold text-white">
-									1<span>+</span>
+									5<span>+</span>
+								</h3>
+								<p className="mb-4">
+									<span className="text-xs md:text-base">Projects Shipped</span>
+								</p>
+								<h3 className="md:text-4xl text-2xl font-semibold text-white">
+									2<span>+</span>
 								</h3>
 								<p>
 									<span className="text-xs md:text-base ">
