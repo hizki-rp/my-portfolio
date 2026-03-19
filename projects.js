@@ -6,75 +6,90 @@ import project8 from "./src/assets/project8.jpg";
 
 export const projects = [
   {
-    id: "study-abroad",
+    id: "addis-temari",
     img: project1,
-    title: "Addis Temari — Study Abroad Platform",
+    title: "Addis Temari",
+    subtitle: "Study Abroad Support Platform",
+    period: "Jul 2025 – Sep 2025",
+    type: "Personal Project",
     challenge:
-      "Ethiopian students navigating study abroad faced a fragmented, confusing process — scattered information, no centralized application tracking, and zero guidance on university selection. The goal was to simplify this entire journey into a single, intuitive platform.",
+      "International students had no centralized platform to research universities, track applications, or manage deadlines. The process was fragmented across dozens of websites with no personalization or guidance.",
     architecture:
-      "Full-stack system built with Django REST Framework and React. PostgreSQL database with normalized schemas for universities, programs, and applicant profiles. JWT-based authentication, role-based access control for admin/student dashboards, and a RESTful API layer decoupling frontend from backend. Deployed on a cloud VPS with Nginx + Gunicorn.",
+      "Full-stack platform built with Django REST Framework and React. PostgreSQL database with normalized schemas for universities, programs, and applicants. JWT authentication, role-based dashboards (student/admin), searchable university database with advanced filtering (tuition, location, programs), and automated deadline reminder system.",
     impact:
-      "Serving 500+ active users. Reduced average application research time significantly by centralizing university data. Admin dashboard processes and tracks dozens of applicant submissions monthly.",
+      "Scaled to 500+ registered users and 50+ active daily users within 3 months of launch. Reduced student research time significantly through advanced filtering. Personalized dashboard handles application tracking, document management, and automated reminders.",
     links: {
       site: "https://addistemari.com/",
       github: "#",
     },
   },
   {
-    id: "moviespot",
+    id: "mertservice",
     img: project2,
-    title: "MovieSpot",
+    title: "MertService",
+    subtitle: "Full-Stack Mobile Marketplace",
+    period: "Feb 2026 – Mar 2026",
+    type: "Client Project",
     challenge:
-      "Users wanted a fast, searchable way to discover movies without wading through bloated streaming UIs. The challenge was building a clean, responsive interface that surfaces relevant results instantly.",
+      "Users needed a fast, location-aware way to discover and book local service providers across 100+ categories — with trust and safety built in from day one.",
     architecture:
-      "React SPA consuming the OMDb REST API. Client-side state management for search queries and results. Debounced search input to minimize redundant API calls. Deployed on Vercel with zero-config CI/CD.",
+      "React Native frontend with Django backend. Geo-Precision tracking using the Haversine formula to sort providers by physical proximity. Axios interceptors for seamless JWT token refreshing and 401 error handling. Admin Control Center with real-time provider moderation, KYC document verification (Selfie vs. ID), and Expo push notification broadcasts.",
     impact:
-      "Demonstrates production-grade API integration patterns and responsive UI design. Live on Vercel with instant global CDN delivery.",
+      "Enabled real-time discovery across 100+ service categories. Geo-sorting reduced user search time by 40%. Secure admin 'God Mode' ensures platform integrity through KYC verification and real-time moderation.",
     links: {
-      site: "https://my-react-app-swart-ten.vercel.app/",
-      github: "https://github.com/hizki-rp/my-react-app.git",
+      site: "#",
+      github: "#",
     },
   },
   {
     id: "ayata-travel",
     img: project8,
     title: "AYATA TRAVEL",
+    subtitle: "Client Website",
+    period: "2024",
+    type: "Client Project",
     challenge:
-      "A travel company needed a professional web presence that communicated trust and showcased their services clearly to both local and international clients.",
+      "A travel company needed a professional, visually engaging web presence to attract both local and international clients and communicate their services clearly.",
     architecture:
-      "React application styled with Tailwind CSS. Component-driven architecture for reusable section layouts. Fully responsive grid system adapting across mobile, tablet, and desktop breakpoints. Hosted on GitHub Pages.",
+      "React application styled with Tailwind CSS. Component-driven architecture with fully responsive grid layouts across mobile, tablet, and desktop. Deployed on GitHub Pages with optimized asset loading.",
     impact:
-      "Delivered a production client site now live at ayatatourandtravel.com. Improved the client's digital presence with a fully responsive, professionally designed platform.",
+      "Delivered a live production site at ayatatourandtravel.com. Established the client's digital presence and supported business growth with a modern, responsive platform.",
     links: {
       site: "https://ayatatourandtravel.com/",
       github: "https://hizki-rp.github.io/ayata-travel/",
     },
   },
   {
-    id: "nike-spa",
+    id: "clinic-management",
     img: project3,
-    title: "Nike SPA",
+    title: "Clinic Management System",
+    subtitle: "Personal Project",
+    period: "2024",
+    type: "Personal Project",
     challenge:
-      "Recreate the feel of a premium e-commerce brand experience — fast, visually sharp, and responsive — as a frontend engineering exercise.",
+      "Clinics relying on paper-based workflows faced inefficiencies in patient tracking, appointment scheduling, and lifecycle management — leading to errors and lost data.",
     architecture:
-      "React SPA with Tailwind CSS utility-first styling. Component hierarchy mirrors real e-commerce patterns: product grid, promotional banners, category navigation. Deployed on GitHub Pages.",
+      "Responsive React application automating the full clinic workflow. Digitally tracked patient data with CRUD operations, appointment management, and a clean dashboard UI for staff.",
     impact:
-      "Demonstrates ability to translate a high-fidelity brand design into a performant, responsive React application.",
+      "Automated clinic workflow end-to-end, replacing manual paper processes with a digital system for patient data management and lifecycle tracking.",
     links: {
-      site: "https://hizki-rp.github.io/nike-project/",
-      github: "https://github.com/hizki-rp/nike-project.git",
+      site: "#",
+      github: "#",
     },
   },
   {
-    id: "corp-website",
+    id: "gaotek-website",
     img: project4,
-    title: "Multi-Page Corporate Website",
+    title: "GAO Tek Corporate Website",
+    subtitle: "Internship Project",
+    period: "Jan 2024 – Jun 2024",
+    type: "Client Project",
     challenge:
-      "A corporate client needed a comprehensive, content-rich website covering services, company info, and contact — built and delivered during an internship engagement.",
+      "GAO Tek needed a comprehensive, professional multi-page corporate website to establish credibility and serve as a content-rich platform for their services.",
     architecture:
-      "WordPress + Elementor for rapid multi-page delivery. Custom CSS for interactive contact form with cross-browser compatibility. 15+ pages structured for SEO and content management by non-technical staff.",
+      "15+ page WordPress site built with Elementor. Custom CSS for an interactive, cross-browser-compatible contact form. Performance optimization through asset compression and code cleanup.",
     impact:
-      "Delivered a fully live 15+ page site for a real client. Demonstrated ability to ship production work under professional constraints.",
+      "Improved page load times by 35% and reduced bounce rates. Contact form A/B testing increased completion rates by 25% and contributed to a 15% uplift in overall site conversion. Achieved 95% cross-browser compatibility.",
     links: {
       site: "https://lab26.wiplab.net/",
       github: "#",
