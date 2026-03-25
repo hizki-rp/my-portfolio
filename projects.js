@@ -4,6 +4,18 @@ import project3 from "./src/assets/project3.png";
 import project4 from "./src/assets/project4.png";
 import project8 from "./src/assets/project8.jpg";
 
+import ms1 from "./src/assets/mertservice/photo_1_2026-03-25_22-09-14.jpg";
+import ms2 from "./src/assets/mertservice/photo_2_2026-03-25_22-09-14.jpg";
+import ms3 from "./src/assets/mertservice/photo_3_2026-03-25_22-09-14.jpg";
+import ms4 from "./src/assets/mertservice/photo_4_2026-03-25_22-09-14.jpg";
+import ms5 from "./src/assets/mertservice/photo_5_2026-03-25_22-09-14.jpg";
+import ms6 from "./src/assets/mertservice/photo_6_2026-03-25_22-09-14.jpg";
+import ms7 from "./src/assets/mertservice/photo_7_2026-03-25_22-09-14.jpg";
+import ms8 from "./src/assets/mertservice/photo_8_2026-03-25_22-09-14.jpg";
+import ms9 from "./src/assets/mertservice/photo_9_2026-03-25_22-09-14.jpg";
+import ms10 from "./src/assets/mertservice/photo_10_2026-03-25_22-09-14.jpg";
+import ms11 from "./src/assets/mertservice/photo_11_2026-03-25_22-09-14.jpg";
+
 export const projects = [
   {
     id: "addis-temari",
@@ -26,6 +38,7 @@ export const projects = [
   {
     id: "mertservice",
     img: project2,
+    screenshots: [ms1, ms2, ms3, ms4, ms5, ms6, ms7, ms8, ms9, ms10, ms11],
     title: "MertService",
     subtitle: "Full-Stack Mobile Marketplace",
     period: "Feb 2026 – Mar 2026",
