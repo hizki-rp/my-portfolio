@@ -19,9 +19,9 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full py-4 bg-black/70 backdrop-blur-md z-50 border-b border-white/5">
+    <header className="fixed top-0 left-0 w-full py-4 z-50">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="glass rounded-2xl px-6 py-3 flex items-center justify-between">
           <a href="#" className="text-white font-semibold text-lg tracking-tight">
             Hizkiyas<span className="gradient-text">.</span>
           </a>

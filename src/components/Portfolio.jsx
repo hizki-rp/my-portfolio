@@ -23,7 +23,7 @@ const ScreenshotCarousel = ({ screenshots, title }) => {
   const next = () => setCurrent((c) => (c + 1) % screenshots.length);
 
   return (
-    <div className="relative w-full h-56 md:h-full overflow-hidden rounded-xl group">
+    <div className="relative w-full h-56 md:h-full overflow-hidden rounded-2xl group">
       <AnimatePresence mode="wait">
         <motion.img
           key={current}
@@ -41,21 +41,21 @@ const ScreenshotCarousel = ({ screenshots, title }) => {
       {/* Prev / Next */}
       <button
         onClick={prev}
-        className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 bg-black/40 hover:bg-black/60 rounded-full text-white transition"
+        className="absolute left-2 top-1/2 -translate-y-1/2 p-2 glass glass-hover rounded-full text-white"
         aria-label="Previous screenshot"
       >
         <AiOutlineLeft size={14} />
       </button>
       <button
         onClick={next}
-        className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 bg-black/40 hover:bg-black/60 rounded-full text-white transition"
+        className="absolute right-2 top-1/2 -translate-y-1/2 p-2 glass glass-hover rounded-full text-white"
         aria-label="Next screenshot"
       >
         <AiOutlineRight size={14} />
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1">
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 glass rounded-full px-3 py-1.5">
         {screenshots.map((_, i) => (
           <button
             key={i}
@@ -67,7 +67,7 @@ const ScreenshotCarousel = ({ screenshots, title }) => {
       </div>
 
       {/* Counter */}
-      <span className="absolute top-3 right-3 text-xs text-white/70 bg-black/40 px-2 py-0.5 rounded-full">
+      <span className="absolute top-3 right-3 text-xs text-white/90 glass px-3 py-1 rounded-full">
         {current + 1} / {screenshots.length}
       </span>
     </div>
@@ -80,9 +80,19 @@ const ProjectCard = ({ project, index }) => {
 
   return (
     <Reveal>
-      <div className={`flex flex-col ${isReversed ? "md:flex-row-reverse" : "md:flex-row"} gap-6 mb-14`}>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, ease: [0.6, 0.05, 0.01, 0.9] }}
+        className={`flex flex-col ${isReversed ? "md:flex-row-reverse" : "md:flex-row"} gap-6 mb-14`}
+      >
         {/* Image / Carousel */}
-        <div className="w-full md:w-1/2 relative overflow-hidden rounded-xl group">
+        <motion.div
+          whileHover={{ scale: 1.02 }}
+          transition={{ duration: 0.3 }}
+          className="w-full md:w-1/2 relative overflow-hidden rounded-2xl group"
+        >
           {project.screenshots ? (
             <ScreenshotCarousel screenshots={project.screenshots} title={project.title} />
           ) : (
@@ -90,7 +100,7 @@ const ProjectCard = ({ project, index }) => {
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-56 md:h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-56 md:h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <div className="absolute bottom-4 left-4 flex gap-2">
@@ -99,7 +109,7 @@ const ProjectCard = ({ project, index }) => {
                     href={project.links.site}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-gray-200 text-xs rounded-full hover:bg-white/20 transition"
+                    className="flex items-center gap-1.5 px-3 py-1.5 glass glass-hover text-gray-200 text-xs rounded-full"
                   >
                     <AiOutlineLink size={13} /> Live Site
                   </a>
@@ -109,7 +119,7 @@ const ProjectCard = ({ project, index }) => {
                     href={project.links.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-gray-200 text-xs rounded-full hover:bg-white/20 transition"
+                    className="flex items-center gap-1.5 px-3 py-1.5 glass glass-hover text-gray-200 text-xs rounded-full"
                   >
                     <AiOutlineGithub size={13} /> GitHub
                   </a>
@@ -117,18 +127,18 @@ const ProjectCard = ({ project, index }) => {
               </div>
             </>
           )}
-        </div>
+        </motion.div>
 
         {/* Case Study */}
         <div className="w-full md:w-1/2 flex flex-col justify-center py-2">
           <div className="flex items-center gap-2 mb-2">
-            <span className={`text-xs px-2 py-0.5 rounded-full border ${tagColors[project.type] || "text-gray-400 border-gray-700"}`}>
+            <span className={`text-xs px-3 py-1 rounded-full border glass ${tagColors[project.type] || "text-gray-400 border-gray-700"}`}>
               {project.type}
             </span>
             <span className="text-gray-600 text-xs">{project.period}</span>
           </div>
 
-          <h3 className="text-xl font-bold text-gray-100 leading-tight">{project.title}</h3>
+          <h3 className="font-bold text-gray-100 leading-tight">{project.title}</h3>
           <p className="text-gray-500 text-sm mb-4">{project.subtitle}</p>
 
           {/* Tabs */}
@@ -137,9 +147,9 @@ const ProjectCard = ({ project, index }) => {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-3 py-1 text-xs font-medium rounded-full border transition-all duration-200 cursor-pointer ${
+                className={`px-3 py-1 text-xs font-medium rounded-full border transition-all duration-300 cursor-pointer ${
                   activeTab === tab.id
-                    ? "bg-cyan-500/15 border-cyan-500/60 text-cyan-400"
+                    ? "glass bg-cyan-500/15 border-cyan-500/60 text-cyan-400"
                     : "border-gray-800 text-gray-600 hover:border-gray-600 hover:text-gray-400"
                 }`}
               >
@@ -164,7 +174,7 @@ const ProjectCard = ({ project, index }) => {
             </AnimatePresence>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Reveal>
   );
 };
@@ -173,7 +183,7 @@ const Portfolio = () => {
   return (
     <div className="max-w-[1000px] mx-auto px-6 py-16" id="portfolio">
       <Reveal>
-        <h2 className="text-3xl font-bold mb-2 text-gray-100">Projects</h2>
+        <h2 className="font-bold mb-2 text-gray-100">Projects</h2>
         <p className="text-gray-500 text-sm mb-12">
           Each project through three lenses — the problem, the system, and the result.
         </p>

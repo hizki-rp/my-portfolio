@@ -6,6 +6,7 @@ import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import { MdApi } from "react-icons/md";
 import { SiFramer, SiExpress } from "react-icons/si";
 import Reveal from "./Reveal";
+import { motion } from "framer-motion";
 
 const skillGroups = [
   {
@@ -55,46 +56,104 @@ const skillGroups = [
 
 const Skills = () => {
   return (
-    <div
-      className="max-w-[1000px] mx-auto px-4 py-16"
-      id="skills"
-    >
+    <div className="max-w-[1000px] mx-auto px-4 py-16" id="skills">
       <Reveal>
-        <h2 className="text-3xl font-bold mb-2 text-gray-100">Skills</h2>
+        <h2 className="font-bold mb-2 text-gray-100">Skills</h2>
         <p className="text-gray-500 text-sm mb-10">
           Full-stack across the entire product lifecycle.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {skillGroups.map((group, i) => (
-            <div key={i} className={`border ${group.color} p-5 rounded-xl`}>
-              <div className="flex items-center gap-2 mb-4">
-                <span className={`w-2 h-2 rounded-full ${group.dot}`} />
-                <h3 className={`font-semibold text-sm tracking-wide uppercase ${group.accent}`}>
-                  {group.category}
-                </h3>
-              </div>
-              <div className="flex flex-col gap-3">
-                {group.technologies.map((tech, j) => (
-                  <div key={j} className="flex items-center gap-3">
-                    <span className="text-lg">{tech.icon}</span>
-                    <span className="text-gray-300 text-sm">{tech.name}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
 
-        {/* Languages */}
-        <div className="mt-5 border border-gray-800 bg-gray-900/20 p-5 rounded-xl">
-          <div className="flex items-center gap-2 mb-3">
-            <span className="w-2 h-2 rounded-full bg-yellow-400" />
-            <h3 className="font-semibold text-sm tracking-wide uppercase text-yellow-400">Languages</h3>
-          </div>
-          <div className="flex gap-6">
-            <span className="text-gray-300 text-sm">English <span className="text-gray-600 text-xs ml-1">Fluent</span></span>
-            <span className="text-gray-300 text-sm">Japanese <span className="text-gray-600 text-xs ml-1">N4 Level</span></span>
-          </div>
+        {/* Bento Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-4 auto-rows-fr">
+          {/* Frontend - Large card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className={`md:col-span-3 md:row-span-2 glass rounded-2xl p-6 ${skillGroups[0].color}`}
+          >
+            <div className="flex items-center gap-2 mb-6">
+              <span className={`w-2 h-2 rounded-full ${skillGroups[0].dot}`} />
+              <h3 className={`font-semibold text-sm tracking-wide uppercase ${skillGroups[0].accent}`}>
+                {skillGroups[0].category}
+              </h3>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {skillGroups[0].technologies.map((tech, j) => (
+                <div key={j} className="flex items-center gap-3">
+                  <span className="text-2xl">{tech.icon}</span>
+                  <span className="text-gray-300 text-sm">{tech.name}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Backend - Large card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className={`md:col-span-3 md:row-span-2 glass rounded-2xl p-6 ${skillGroups[1].color}`}
+          >
+            <div className="flex items-center gap-2 mb-6">
+              <span className={`w-2 h-2 rounded-full ${skillGroups[1].dot}`} />
+              <h3 className={`font-semibold text-sm tracking-wide uppercase ${skillGroups[1].accent}`}>
+                {skillGroups[1].category}
+              </h3>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {skillGroups[1].technologies.map((tech, j) => (
+                <div key={j} className="flex items-center gap-3">
+                  <span className="text-2xl">{tech.icon}</span>
+                  <span className="text-gray-300 text-sm">{tech.name}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Tools - Medium card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={`md:col-span-4 glass rounded-2xl p-6 ${skillGroups[2].color}`}
+          >
+            <div className="flex items-center gap-2 mb-4">
+              <span className={`w-2 h-2 rounded-full ${skillGroups[2].dot}`} />
+              <h3 className={`font-semibold text-sm tracking-wide uppercase ${skillGroups[2].accent}`}>
+                {skillGroups[2].category}
+              </h3>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              {skillGroups[2].technologies.map((tech, j) => (
+                <div key={j} className="flex items-center gap-2">
+                  <span className="text-xl">{tech.icon}</span>
+                  <span className="text-gray-300 text-sm">{tech.name}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Languages - Small card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="md:col-span-2 glass rounded-2xl p-6 border-yellow-900/60 bg-yellow-950/20"
+          >
+            <div className="flex items-center gap-2 mb-4">
+              <span className="w-2 h-2 rounded-full bg-yellow-400" />
+              <h3 className="font-semibold text-sm tracking-wide uppercase text-yellow-400">Languages</h3>
+            </div>
+            <div className="flex flex-col gap-2">
+              <span className="text-gray-300 text-sm">English <span className="text-gray-600 text-xs">Fluent</span></span>
+              <span className="text-gray-300 text-sm">Japanese <span className="text-gray-600 text-xs">N4</span></span>
+            </div>
+          </motion.div>
         </div>
       </Reveal>
     </div>

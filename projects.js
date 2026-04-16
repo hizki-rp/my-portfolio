@@ -64,24 +64,7 @@ export const projects = [
       github: "#",
     },
   },
-  {
-    id: "ayata-travel",
-    img: project8,
-    title: "AYATA TRAVEL",
-    subtitle: "Client Website",
-    period: "2024",
-    type: "Client Project",
-    challenge:
-      "A travel company needed a professional, visually engaging web presence to attract both local and international clients and communicate their services clearly.",
-    architecture:
-      "React application styled with Tailwind CSS. Component-driven architecture with fully responsive grid layouts across mobile, tablet, and desktop. Deployed on GitHub Pages with optimized asset loading.",
-    impact:
-      "Delivered a live production site at ayatatourandtravel.com. Established the client's digital presence and supported business growth with a modern, responsive platform.",
-    links: {
-      site: "https://ayatatourandtravel.com/",
-      github: "https://hizki-rp.github.io/ayata-travel/",
-    },
-  },
+ 
   {
     id: "clinic-management",
     img: project3,
@@ -99,6 +82,24 @@ export const projects = [
     links: {
       site: "#",
       github: "#",
+    },
+  },
+   {
+    id: "ayata-travel",
+    img: project8,
+    title: "AYATA TRAVEL",
+    subtitle: "Client Website",
+    period: "2024",
+    type: "Client Project",
+    challenge:
+      "A travel company needed a professional, visually engaging web presence to attract both local and international clients and communicate their services clearly.",
+    architecture:
+      "React application styled with Tailwind CSS. Component-driven architecture with fully responsive grid layouts across mobile, tablet, and desktop. Deployed on GitHub Pages with optimized asset loading.",
+    impact:
+      "Delivered a live production site at ayatatourandtravel.com. Established the client's digital presence and supported business growth with a modern, responsive platform.",
+    links: {
+      site: "https://ayatatourandtravel.com/",
+      github: "https://hizki-rp.github.io/ayata-travel/",
     },
   },
   {
