@@ -16,6 +16,16 @@ import ms9 from "./src/assets/mertservice/photo_9_2026-03-25_22-09-14.jpg";
 import ms10 from "./src/assets/mertservice/photo_10_2026-03-25_22-09-14.jpg";
 import ms11 from "./src/assets/mertservice/photo_11_2026-03-25_22-09-14.jpg";
 
+import clinic1 from "./src/assets/clinic/Screenshot 2026-04-16 153046.png";
+import clinic2 from "./src/assets/clinic/Screenshot 2026-04-16 153101.png";
+import clinic3 from "./src/assets/clinic/Screenshot 2026-04-16 153147.png";
+import clinic4 from "./src/assets/clinic/Screenshot 2026-04-16 153209.png";
+import clinic5 from "./src/assets/clinic/Screenshot 2026-04-16 153233.png";
+import clinic6 from "./src/assets/clinic/Screenshot 2026-04-16 153254.png";
+import clinic7 from "./src/assets/clinic/Screenshot 2026-04-16 153332.png";
+import clinic8 from "./src/assets/clinic/Screenshot 2026-04-16 153343.png";
+import clinic9 from "./src/assets/clinic/Screenshot 2026-04-16 153408.png";
+
 export const projects = [
   {
     id: "addis-temari",
@@ -75,6 +85,7 @@ export const projects = [
   {
     id: "clinic-management",
     img: project3,
+    screenshots: [clinic1, clinic2, clinic3, clinic4, clinic5, clinic6, clinic7, clinic8, clinic9],
     title: "Clinic Management System",
     subtitle: "Personal Project",
     period: "2024",
