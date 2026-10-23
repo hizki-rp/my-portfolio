@@ -48,7 +48,7 @@ const Hero = () => {
   const name = "Hizkiyas Gebregiorgis".split(" ");
 
   return (
-    <section className="relative min-h-screen flex items-center py-12 overflow-hidden bg-black">
+    <section className="relative min-h-screen flex items-center pt-28 pb-12 md:pt-32 overflow-hidden bg-black">
       {/* Animated mesh gradient blob */}
       <div
         ref={blobRef}
