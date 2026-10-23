@@ -26,22 +26,118 @@ import clinic7 from "./src/assets/clinic/Screenshot 2026-04-16 153332.png";
 import clinic8 from "./src/assets/clinic/Screenshot 2026-04-16 153343.png";
 import clinic9 from "./src/assets/clinic/Screenshot 2026-04-16 153408.png";
 
+import closet1 from "./src/assets/closetai/Screenshot 2026-10-22 224034.png";
+import closet2 from "./src/assets/closetai/Screenshot 2026-10-22 224053.png";
+import closet3 from "./src/assets/closetai/Screenshot 2026-10-22 224105.png";
+
+import homepath1 from "./src/assets/homepath/Screenshot 2026-10-22 224850.png";
+
+import rez1 from "./src/assets/rezumae/Screenshot 2026-10-22 224240.png";
+import rez2 from "./src/assets/rezumae/Screenshot 2026-10-22 224253.png";
+import rez3 from "./src/assets/rezumae/Screenshot 2026-10-22 224345.png";
+import rez4 from "./src/assets/rezumae/Screenshot 2026-10-22 224404.png";
+import rez5 from "./src/assets/rezumae/Screenshot 2026-10-22 224539.png";
+import rez6 from "./src/assets/rezumae/Screenshot 2026-10-22 224609.png";
+
+import vast1 from "./src/assets/vast-expo/photo_2026-10-22_22-36-24.jpg";
+import vast2 from "./src/assets/vast-expo/photo_2026-10-22_22-36-20.jpg";
+import vast3 from "./src/assets/vast-expo/photo_2026-10-22_22-36-01.jpg";
+import vast4 from "./src/assets/vast-expo/photo_2026-10-22_22-36-11.jpg";
+import vast5 from "./src/assets/vast-expo/photo_2026-10-22_22-36-15.jpg";
+
 export const projects = [
+  {
+    id: "closetai",
+    screenshots: [closet1, closet2, closet3],
+    frame: "phone",
+    title: "ClosetAI",
+    subtitle: "AI Personal Stylist",
+    domain: "Computing × interaction design × consumer behaviour",
+    period: "2026",
+    type: "AI Product",
+    challenge:
+      "Deciding what to wear every day costs time and mental energy, and generic fashion advice ignores the clothes people actually own, the occasion, their mood and the weather.",
+    architecture:
+      "Full-stack Next.js app with Supabase (PostgreSQL), Clerk authentication and Cloudflare R2 image storage, built from the PRD and Figma designs. Users photograph clothes into a digital closet; an OpenAI-based RAG pipeline, built with the team's data scientists, grounds outfit generation in each user's own wardrobe data. I built the application and data layer that feeds it and designed the database schema.",
+    impact:
+      "Generates three tailored outfits per request that users rate, saving daily decision time. Demoed with a cross-functional team of PMs, designers and engineers at the Product Manager Accelerator — 3rd place and Tier 1: AI Trailblazer. Now in beta.",
+    links: {
+      site: "#",
+      github: "#",
+    },
+  },
+  {
+    id: "homepath",
+    img: homepath1,
+    displayUrl: "HomePath — Apartments in Addis Ababa",
+    title: "HomePath",
+    subtitle: "Real-Estate Listing Platform · Marvels Creative Technologies",
+    domain: "Computing × housing × digital markets",
+    type: "Work Project",
+    challenge:
+      "Addis Ababa's housing market is fragmented: apartments from different developers are hard to find and compare on size, bedrooms and payment terms.",
+    architecture:
+      "Mobile-first platform where multiple property developers list apartments with unit sizes, bedroom counts and payment plans, sourced from each developer's own listings. Bedroom-first browsing and a bilingual English/Amharic interface. Django back end with a React/Next.js front end styled in Tailwind CSS.",
+    impact:
+      "Gives buyers one place to browse and compare listings across developers, making a fragmented housing market easier to navigate.",
+    links: {
+      site: "https://slategrey-stork-276260.hostingersite.com/",
+      github: "#",
+    },
+  },
   {
     id: "addis-temari",
     img: project1,
     title: "Addis Temari",
-    subtitle: "Study Abroad Support Platform",
+    subtitle: "Study-Abroad Platform · Acquired by Marvels Creative Technologies",
+    domain: "Computing × education × international mobility",
     period: "Jul 2025 – Sep 2025",
-    type: "Personal Project",
+    type: "Founder",
     challenge:
-      "International students had no centralized platform to research universities, track applications, or manage deadlines. The process was fragmented across dozens of websites with no personalization or guidance.",
+      "Ethiopian students had no centralized platform to research universities, track applications, or manage deadlines. The process was fragmented across dozens of websites with no personalization or guidance.",
     architecture:
-      "Full-stack platform built with Django REST Framework and React. PostgreSQL database with normalized schemas for universities, programs, and applicants. JWT authentication, role-based dashboards (student/admin), searchable university database with advanced filtering (tuition, location, programs), and automated deadline reminder system.",
+      "Full-stack platform built with Django REST Framework and React. PostgreSQL database with normalized schemas for universities, programs, and applicants. JWT authentication, role-based dashboards (student/admin), a searchable global university database filtered by tuition, location and program — the way students actually search — and automated deadline reminders.",
     impact:
-      "Scaled to 500+ registered users and 50+ active daily users within 3 months of launch. Reduced student research time significantly through advanced filtering. Personalized dashboard handles application tracking, document management, and automated reminders.",
+      "Reached 500+ registered users and 50+ daily active users within 3 months of launch. The platform was later acquired by Marvels Creative Technologies.",
     links: {
       site: "https://addistemari.com/",
+      github: "#",
+    },
+  },
+  {
+    id: "rezumae",
+    screenshots: [rez1, rez2, rez4, rez5, rez6, rez3],
+    title: "Rezumae",
+    subtitle: "Free AI Resume Builder",
+    domain: "Computing × employment × human–computer interaction",
+    type: "Founder",
+    challenge:
+      "Job seekers lose interviews to resumes that don't match the posting, then spend hours re-typing the same details into every job-application form.",
+    architecture:
+      "Web-based resume builder with templates, CV import and a live editor. 'Tailor to job' reads the resume and a job posting side by side, returns an ATS match score and missing keywords, and rewrites weak bullets. Also generates cover letters in a chosen tone, and an application-autofill feature completes repetitive job-application forms from the user's resume data.",
+    impact:
+      "Turns hours of tailoring and form-filling into minutes. Free for job seekers and now at go-to-market stage with beta testers.",
+    links: {
+      site: "https://rezumae.pro/",
+      github: "#",
+    },
+  },
+  {
+    id: "vast-expo",
+    screenshots: [vast1, vast2, vast3, vast4, vast5],
+    frame: "phone",
+    title: "Vast Expo",
+    subtitle: "Machinery & Spare-Parts Marketplace",
+    domain: "Computing × industry × digital markets",
+    type: "Personal Project",
+    challenge:
+      "The heavy-machinery and spare-parts trade runs largely offline, so businesses struggle to find equipment to buy or rent and to reach buyers for their own.",
+    architecture:
+      "Full-stack, mobile-first marketplace with machinery sales, machinery rental and spare-parts sections, search and category browsing (excavators, loaders, cranes and more), saved items and light/dark themes. Sellers create a verified account to post listings, and an admin dashboard reviews and approves every listing before it goes live.",
+    impact:
+      "Digitizes a largely offline equipment trade, while admin moderation keeps marketplace content trustworthy.",
+    links: {
+      site: "#",
       github: "#",
     },
   },
@@ -49,6 +145,7 @@ export const projects = [
     id: "mertservice",
     img: project2,
     screenshots: [ms1, ms2, ms3, ms4, ms5, ms6, ms7, ms8, ms9, ms10, ms11],
+    frame: "cover",
     title: "MertService",
     subtitle: "Full-Stack Mobile Marketplace",
     period: "Feb 2026 – Mar 2026",
@@ -70,7 +167,8 @@ export const projects = [
     img: project3,
     screenshots: [clinic1, clinic2, clinic3, clinic4, clinic5, clinic6, clinic7, clinic8, clinic9],
     title: "Clinic Management System",
-    subtitle: "Personal Project",
+    subtitle: "Digital Clinic Workflow",
+    domain: "Computing × healthcare",
     period: "2024",
     type: "Personal Project",
     challenge:

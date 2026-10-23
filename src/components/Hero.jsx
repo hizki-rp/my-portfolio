@@ -8,6 +8,14 @@ import {
 } from "react-icons/ai";
 import profbest from "../assets/Portfolio-cart.png";
 import MagneticButton from "./MagneticButton";
+import { CV_URL, CV_FILENAME, LINKEDIN_URL, GITHUB_URL, EMAIL } from "../constants";
+
+const highlights = [
+  "3rd Place · Tier 1 AI Trailblazer",
+  "Founder · Platform Acquired",
+  "Certified AI Engineer",
+  "BSc Software Engineering",
+];
 
 const Hero = () => {
   const blobRef = useRef(null);
@@ -61,13 +69,13 @@ const Hero = () => {
             >
               <TypeAnimation
                 sequence={[
+                  "Software Engineer",
+                  1200,
+                  "Applied AI Builder",
+                  1200,
                   "Full-Stack Engineer",
                   1200,
-                  "Product Architect",
-                  1200,
-                  "React & Django Specialist",
-                  1200,
-                  "Mobile App Developer",
+                  "Founder & Co-founder",
                   1200,
                 ]}
                 speed={50}
@@ -106,10 +114,10 @@ const Hero = () => {
               transition={{ duration: 0.7, delay: 0.8 }}
               className="mt-8 text-sm md:text-base font-light text-gray-400 max-w-lg leading-relaxed"
             >
-              I build intelligent systems where complex backend logic meets
-              intuitive user experience. Specialist in React, Django, and
-              full-stack architecture — shipping production apps used by real
-              people at scale.
+              I build technology around real human problems — from a
+              study-abroad platform that reached 500+ students and was
+              acquired, to an AI personal stylist and an AI leasing startup.
+              Full-stack in React, Next.js and Django, with AI built in.
             </motion.p>
 
             <motion.div
@@ -129,9 +137,8 @@ const Hero = () => {
               </MagneticButton>
               <MagneticButton>
                 <a
-                  href="https://indigo-joellen-86.tiiny.site/"
-                  target="_blank"
-                  rel="noreferrer"
+                  href={CV_URL}
+                  download={CV_FILENAME}
                   className="inline-flex items-center justify-center px-8 py-3 text-sm font-medium text-gray-300 rounded-full glass glass-hover"
                 >
                   Download CV
@@ -145,16 +152,32 @@ const Hero = () => {
               transition={{ duration: 0.7, delay: 1.2 }}
               className="flex items-center gap-6 mt-10"
             >
-              <a href="https://github.com/hizki-rp" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-cyan-400 transition-colors duration-300">
+              <a href={GITHUB_URL} target="_blank" rel="noreferrer" aria-label="GitHub" className="text-gray-500 hover:text-cyan-400 transition-colors duration-300">
                 <AiOutlineGithub size={20} />
               </a>
-              <a href="https://linkedin.com/in/hizkiyas-bogale-ab5675273" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-cyan-400 transition-colors duration-300">
+              <a href={LINKEDIN_URL} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-gray-500 hover:text-cyan-400 transition-colors duration-300">
                 <AiOutlineLinkedin size={20} />
               </a>
-              <a href="mailto:hizkiyasbogale46@gmail.com" className="text-gray-500 hover:text-cyan-400 transition-colors duration-300">
+              <a href={`mailto:${EMAIL}`} aria-label="Email" className="text-gray-500 hover:text-cyan-400 transition-colors duration-300">
                 <AiOutlineMail size={20} />
               </a>
               <span className="text-gray-700 text-xs ml-2">Addis Ababa, Ethiopia</span>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 1.4 }}
+              className="flex flex-wrap gap-2 mt-8"
+            >
+              {highlights.map((h) => (
+                <span
+                  key={h}
+                  className="text-[11px] text-gray-300 px-3 py-1 rounded-full border border-gray-800 bg-gray-900/40"
+                >
+                  {h}
+                </span>
+              ))}
             </motion.div>
           </div>
 

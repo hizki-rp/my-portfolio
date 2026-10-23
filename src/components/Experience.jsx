@@ -3,35 +3,73 @@ import Reveal from "./Reveal";
 
 const experiences = [
   {
-    company: "Marvelous Creative Technologies PLC",
-    role: "Software Developer",
+    company: "SmartLease",
+    role: "Co-founder & Software Engineer",
+    period: "2026 – Present",
+    location: "EAII AI Startup Competition · Addis Ababa",
+    type: "work",
+    bullets: [
+      "Co-founding an AI-driven leasing startup in the Ethiopian Artificial Intelligence Institute's national AI Startup Competition; building the MVP.",
+      "Leading architecture, data model and AI features while working with teammates on market research and user needs.",
+    ],
+  },
+  {
+    company: "ClosetAI",
+    role: "Full-Stack Developer Intern",
+    period: "2026",
+    location: "Product Manager Accelerator · Remote",
+    type: "work",
+    bullets: [
+      "Built an AI personal stylist that turns photos of a user's clothes into a digital closet and generates three outfits tailored to occasion, mood and weather.",
+      "Collaborated with the team's data scientists on an OpenAI-based RAG pipeline, building the application and data layer that grounds it in each user's wardrobe.",
+      "Developed full-stack in Next.js with Supabase, Clerk and Cloudflare R2 from the PRD and Figma designs; designed the database schema.",
+      "Demoed the MVP with a cross-functional team of PMs, designers and engineers — 3rd place and Tier 1: AI Trailblazer.",
+    ],
+  },
+  {
+    company: "Marvels Creative Technologies PLC",
+    role: "Full-Stack Developer (part-time)",
     period: "Mar 2024 – Present",
     location: "Addis Ababa",
     type: "work",
     bullets: [
-      "Modernized a legacy WordPress site by integrating React and Tailwind CSS, reducing load times by 50%.",
-      "Designed and developed responsive, modern websites for various clients, establishing their online presence and supporting business growth.",
+      "Built HomePath, a mobile-first real-estate platform where Addis Ababa developers list apartments with unit sizes, bedrooms and payment plans.",
+      "Develop Django back ends and React/Next.js front ends with Tailwind CSS for client products.",
+      "Modernized a legacy WordPress site with React and Tailwind CSS, cutting load times by 50%.",
     ],
   },
   {
     company: "GAO Tek Inc.",
-    role: "Web Developer Intern",
+    role: "Web Developer",
     period: "Jan 2024 – Jun 2024",
     location: "Remote",
     type: "work",
     bullets: [
+      "Delivered a 15+ page corporate website and improved load times by 35%.",
       "Engineered and optimized a dynamic contact form with A/B testing, increasing completion rates by 25% and contributing to a 15% uplift in site conversion.",
       "Achieved 95% cross-browser compatibility, boosting form submissions by 30%.",
       "Collaborated with the content team to optimize multimedia assets, improving page load speeds and user retention.",
     ],
   },
   {
+    company: "Product Manager Accelerator",
+    role: "AI Product Program",
+    period: "2026",
+    location: "Remote",
+    type: "education",
+    bullets: [
+      "Intensive, team-based program covering product discovery, PRDs, user research and AI product delivery; awarded Tier 1: AI Trailblazer.",
+    ],
+  },
+  {
     company: "Mekelle University",
     role: "BSc in Software Engineering",
-    period: "Graduated Apr 2023",
-    location: "Mekelle, Tigray",
+    period: "Graduated Apr 2023 · CGPA 3.29 / 4.00",
+    location: "Mekelle, Ethiopia",
     type: "education",
-    bullets: [],
+    bullets: [
+      "Core areas: software design and architecture, databases, web engineering, algorithms and data structures.",
+    ],
   },
 ];
 

@@ -1,9 +1,12 @@
 import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { AiOutlineDownload } from "react-icons/ai";
 import Reveal from "./Reveal";
+import { CV_URL, CV_FILENAME, LINKEDIN_URL } from "../constants";
 
 const stats = [
-  { value: "500+", label: "Active Users" },
-  { value: "5+", label: "Projects Shipped" },
+  { value: "500+", label: "Users Reached" },
+  { value: "1", label: "Product Acquired" },
+  { value: "9+", label: "Projects Shipped" },
   { value: "2+", label: "Years Experience" },
 ];
 
@@ -20,15 +23,21 @@ const Contact = () => {
           {/* About */}
           <div className="flex-1">
             <p className="text-gray-400 text-sm leading-relaxed font-light mb-8">
-              Passionate and detail-oriented Software Engineer with expertise in building
-              scalable, user-centric web applications. Proficient across the full stack —
-              React and Next.js on the frontend, Django and Node.js on the backend.
-              I ship production systems used by real people, from 500+ user platforms
-              to real-time mobile marketplaces.
+              Software engineer and applied AI builder who learns the domain before
+              writing the code — education systems, patient care, fashion and user
+              behaviour, property and equipment markets. I founded Addis Temari, a
+              study-abroad platform later acquired by Marvels Creative Technologies,
+              built ClosetAI's application and data layer (3rd place, Tier 1: AI
+              Trailblazer), and I'm co-founding SmartLease in the EAII AI Startup
+              Competition.
+            </p>
+            <p className="text-gray-400 text-sm leading-relaxed font-light mb-8">
+              My focus: human-centred technology for education, health and work in
+              emerging economies like Ethiopia.
             </p>
 
             {/* Stats */}
-            <div className="flex gap-6 mb-8">
+            <div className="flex flex-wrap gap-6 mb-8">
               {stats.map((s, i) => (
                 <div key={i}>
                   <p className="text-2xl font-bold text-white">{s.value}</p>
@@ -51,9 +60,13 @@ const Contact = () => {
                 <AiOutlineGithub size={16} className="text-cyan-400" />
                 github.com/hizki-rp
               </a>
-              <a href="https://linkedin.com/in/hizkiyas-bogale-ab5675273" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-gray-400 hover:text-white text-sm transition-colors">
+              <a href={LINKEDIN_URL} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-gray-400 hover:text-white text-sm transition-colors">
                 <AiOutlineLinkedin size={16} className="text-cyan-400" />
                 LinkedIn Profile
+              </a>
+              <a href={CV_URL} download={CV_FILENAME} className="flex items-center gap-2 text-gray-400 hover:text-white text-sm transition-colors">
+                <AiOutlineDownload size={16} className="text-cyan-400" />
+                Download CV (PDF)
               </a>
             </div>
           </div>

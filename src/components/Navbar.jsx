@@ -2,11 +2,13 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import { CV_URL, CV_FILENAME } from "../constants";
 
 const navLinks = [
   { to: "skills", label: "Skills" },
   { to: "portfolio", label: "Projects" },
   { to: "experience", label: "Experience" },
+  { to: "credentials", label: "Credentials" },
   { to: "contact", label: "Contact" },
 ];
 
@@ -44,9 +46,8 @@ const Navbar = () => {
           <div className="hidden md:flex relative group">
             <div className="absolute -inset-px rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 transition-all duration-200 group-hover:shadow-lg group-hover:shadow-cyan-500/30" />
             <a
-              href="https://indigo-joellen-86.tiiny.site/"
-              target="_blank"
-              rel="noreferrer"
+              href={CV_URL}
+              download={CV_FILENAME}
               className="relative px-5 py-1.5 text-sm font-medium text-white bg-black rounded-full"
             >
               Download CV
@@ -88,9 +89,8 @@ const Navbar = () => {
         <div className="relative group mt-2">
           <div className="absolute -inset-px rounded-full bg-gradient-to-r from-cyan-500 to-purple-500" />
           <a
-            href="https://indigo-joellen-86.tiiny.site/"
-            target="_blank"
-            rel="noreferrer"
+            href={CV_URL}
+            download={CV_FILENAME}
             className="relative px-6 py-2 text-sm font-medium text-white bg-black rounded-full block"
           >
             Download CV
